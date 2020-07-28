@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:layout_marginLeft="80dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RadioGroup
+        android:id="@+id/typeRadioGroup"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioPetrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Petrol" />
+
+        <RadioButton
+            android:id="@+id/radioDeisel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Deisel" />
+
+        <RadioButton
+            android:id="@+id/radioCNG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="CNG" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnDecrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="52dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnIncrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="INVOICE"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_marginTop="60dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Fuel Cost :"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/fuelcost"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text=""
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Base Fare:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/basefare"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text=""
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Delivery charge(10/km):"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/delivery"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text=""
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="TOTAL AMOUNT :"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/totalCost"
+                android:gravity="right"
+                android:padding="3dip"
+                android:text=""
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Proceed to Payment" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "198492551493",
+    "firebase_url": "https://fuel-delivery-1.firebaseio.com",
+    "project_id": "fuel-delivery-1",
+    "storage_bucket": "fuel-delivery-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198492551493:android:2a52454109418ba226a62c",
+        "android_client_info": {
+          "package_name": "com.example.fueldelivery1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198492551493-770h39pr2qnk368m41okooddibsg5844.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDfPcTis3NmYc6ouk0SmXdrbwtgHhSvsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198492551493-770h39pr2qnk368m41okooddibsg5844.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
