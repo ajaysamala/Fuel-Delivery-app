@@ -1,6 +1,6 @@
 # Fuel-Delivery-app
 
-#How to build the application:
+# How to build the application:
 1. Open the project in Android studio.
 2. Build the project and check for any persisting errors.
 3. Click on build.
@@ -19,7 +19,7 @@
 
 Note : Please turn on your device location before installing and running the app.
 
-#Understanding and Using the app
+# Understanding and Using the app
 1. Once you start the app, You will see a screen where the logo of the app is displayed.
 2. Click on lets get started button.You will then be directed to maps activity where your current location is displayed.
 3. With the help of menu bar, you can register,login and order fuel.
